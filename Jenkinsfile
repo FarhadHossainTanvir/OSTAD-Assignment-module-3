@@ -62,15 +62,16 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            echo 'Pipeline finished'
-        }
-        failure {
-            echo 'Build failed!'
-        }
-        success {
-            echo 'Build succeeded!'
-        }
+post {
+    always {
+        echo 'Pipeline finished'
     }
+    success {
+        echo 'Build succeeded!'
+    }
+    failure {
+        echo 'Build failed.'
+    }
+}
+
 }
