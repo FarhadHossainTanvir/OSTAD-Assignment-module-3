@@ -1,0 +1,3 @@
+echo "This is the first line" > newfile.txt
+echo "This is the second line" >> newfile.txt
+echo "This is the third line" >> newfile.txt
